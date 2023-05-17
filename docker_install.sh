@@ -14,7 +14,6 @@ installApps()
 
     #### Intenta comprobar si docker está instalado y en ejecución - no pregunta si lo está
     if [[ "$ISACT" != "active" ]]; then
-        #read -rp "Docker-CE (y/n): " DOCK
         DOCK="y"
     else
         echo "Docker parece estar instalado y funcionando."
@@ -23,7 +22,6 @@ installApps()
     fi
 
     if [[ "$ISCOMP" == *"command not found"* ]]; then
-        #read -rp "Docker-Compose (y/n): " DCOMP
         DCOMP="y"
     else
         echo "Docker-compose parece estar instalado."
